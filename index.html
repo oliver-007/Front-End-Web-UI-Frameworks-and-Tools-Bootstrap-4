@@ -4,27 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Latest compiled and minified CSS -->
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script
-      src="https://kit.fontawesome.com/852c672a64.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Ristorante Con Fusion</title>
   </head>
   <body>
@@ -43,22 +37,22 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a href="#" class="nav-link">
-                <span class="fas fa-home fa-lg"></span> Home</a
+                <span class="fa fa-home fa-lg"></span> Home</a
               >
             </li>
             <li class="nav-item">
               <a href="./aboutus.html" class="nav-link">
-                <span class="fas fa-info"></span> About</a
+                <span class="fa fa-info"></span> About</a
               >
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <span class="fas fa-list"></span> Menu</a
+                <span class="fa fa-list"></span> Menu</a
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <span class="fas fa-address-card"></span> Contact</a
+              <a href="./contactus.html" class="nav-link">
+                <span class="fa fa-address-card"></span> Contact</a
               >
             </li>
           </ul>
@@ -136,7 +130,7 @@
               <li><a href="#">Home</a></li>
               <li><a href="./aboutus.html">About</a></li>
               <li><a href="#">Menu</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./contactus.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-7 col-sm-5">
@@ -145,19 +139,42 @@
               121, Clear Water Bay Road <br />
               Clear Water Bay, Kowloon <br />
               Hong Kong <br />
-              Tel : 0124589 <br />
-              Fax : 0124589 <br />
-              Mail : <a href="">abc1234@gmail.com</a>
+              <i class="fa fa-phone fa-lg"></i> : 0124589 <br />
+              <i class="fa fa-fax fa-lg"></i> : 0124589 <br />
+              <i class="fa fa-envelope fa-lg"></i> :
+              <a href="">abc1234@gmail.com</a>
             </address>
           </div>
           <div class="col-12 col-sm-4 align-self-center">
             <div class="text-center">
-              <a href="">Google+</a>
-              <a href="">Facebook</a>
-              <a href="">Linkedin</a>
-              <a href="">Twitter</a>
-              <a href="">Youtube</a>
-              <a href="">Mail</a>
+              <a
+                href="http://google.com/+"
+                class="btn btn-social-icon btn-google"
+                ><i class="fa fa-google-plus fa-lg"></i
+              ></a>
+              <a
+                href="http://www.facebook.com/profile.php?id="
+                class="btn btn-social-icon btn-facebook"
+                ><i class="fa fa-facebook fa-lg"></i
+              ></a>
+              <a
+                href="http://www.linkedin.com/in/"
+                class="btn btn-social-icon btn-linkedin"
+                ><i class="fa fa-linkedin fa-lg"></i
+              ></a>
+              <a
+                href="http://twitter.com/"
+                class="btn btn-social-icon btn-twitter"
+                ><i class="fa fa-twitter fa-lg"></i
+              ></a>
+              <a
+                href="http://youtube.com/"
+                class="btn btn-social-icon btn-google"
+                ><i class="fa fa-youtube fa-lg"></i
+              ></a>
+              <a href="mailto:" class="btn btn-social-icon"
+                ><i class="fa fa-envelope-o fa-lg"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -168,5 +185,10 @@
         </div>
       </div>
     </footer>
+
+    <!-- jQuery first, then Pooper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
