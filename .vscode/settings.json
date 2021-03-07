@@ -1,4 +1,5 @@
 {
     "git.postCommitCommand": "push",
-    "git.showPushSuccessNotification": true
+    "git.showPushSuccessNotification": true,
+    "darkSynthwave84.brightness": 1
 }
