@@ -60,7 +60,7 @@
           </ul>
 
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
+            <a id="loginBtn" role="button">
               <span class="fa fa-sign-in"></span> Login</a
             >
           </span>
@@ -306,8 +306,7 @@
               role="button"
               class="btn btn-block nav-link btn-warning"
               href="#reserve"
-              data-toggle="modal"
-              data-target="#reserveModal"
+              id="reserveBtn"
               >Reserve Table</a
             >
           </div>
@@ -676,6 +675,15 @@
     <script>
       $(document).ready(function () {
         $("#mycarousel").carousel({ interval: 2000 });
+
+        $("#loginBtn").click(function () {
+          $("#loginModal").modal();
+        });
+
+        $("#reserveBtn").click(function () {
+          $("#reserveModal").modal();
+        });
+
         $("#carouselButton").click(function () {
           if ($("#carouselButton").children("span").hasClass("fa-pause")) {
             $("#mycarousel").carousel("pause");
